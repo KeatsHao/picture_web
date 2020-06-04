@@ -1,7 +1,12 @@
 #!usr/bin/env python
 # -*- coding:utf-8 -*-
+'''网上的一个分页模板'''
 from urllib import urlencode
 
+if __name__='__main__':
+    print(__doc__)
+    
+    
 class Pagination(object):
     """
     自定义分页
