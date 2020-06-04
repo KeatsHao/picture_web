@@ -86,8 +86,8 @@ def deal_one_page(num,list_2d=[],tag=0,search_key='scifi'):        #对每个分
 
 def web_parser():
     parser=argparse.ArgumentParser(description='下载图片信息')
-    parser.add_argument('--target',type=str)     #爬取的关键字
-    parser.add_argument('--doc',type=str)        #保存图片信息的文件
+    parser.add_argument('--target',type=str,help='Type of pictures you want.')     #爬取的关键字
+    parser.add_argument('--doc',type=str,help='File you create to store the information.')        #保存图片信息的文件
     return parser.parse_args().target,parser.parse_args().doc
 
 
